@@ -1,4 +1,4 @@
-Creating a file in /temp
+#Creating a file in /temp with content 'I love puppet'
 file { '/temp/school':
     ensure  => 'file',
     content => 'I love Puppet',
