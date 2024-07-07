@@ -1,0 +1,17 @@
+#!/usr/bin/env bash
+# A script that loops from 1-10
+# 4th iteration should be bad luck
+# 8th loop iteration should dispaly good luck
+
+count=0
+while [ $count -lt 10 ]
+do
+	if [ $count -eq 3 ]; then
+		echo "bad luck"
+	elif [ $count -eq 7 ]; then 
+		echo "good luck"
+	else
+		echo "Best School"
+	fi
+	((count++))
+done
